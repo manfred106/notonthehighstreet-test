@@ -24,6 +24,15 @@ public class CheckoutBasket {
 	// Log all discounts that applied to this basket
 	private List<DiscountApplied> discountList = new ArrayList<>();
 	
+	private BigDecimal originalPrice = BigDecimal.ZERO;
+	
+	
+	/**
+	 * Default constructor
+	 */
+	public CheckoutBasket() {
+	}
+	
 
 	/**
 	 * Add an item to the basket by product code
@@ -34,12 +43,20 @@ public class CheckoutBasket {
 		Product product = store.getProductByCode(productCode);
 
 		if (product != null) {
+			originalPrice = originalPrice.add(product.getPrice());
 			itemList.add(new CheckoutItem(product));
 		}
 	}
 
+	
+	/**
+	 * Get the item list. The list returned is immutable, 
+	 * the items in the list can changed only by this class only.
+	 * 
+	 * @return the item list
+	 */
 	public List<CheckoutItem> getItemList() {
-		return itemList;
+		return Collections.unmodifiableList(itemList);
 	}
 
 	
@@ -59,6 +76,17 @@ public class CheckoutBasket {
 	public List<DiscountApplied> getDiscountList()
 	{
 		return discountList;
+	}
+	
+	
+	/**
+	 * Get the original total price of all basket items.
+	 * 
+	 * @return the original total price.
+	 */
+	public BigDecimal getOriginalPrice()
+	{
+		return originalPrice;
 	}
 	
 

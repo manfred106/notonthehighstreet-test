@@ -6,8 +6,9 @@ import com.notonthehighstreet.CheckoutBasket;
 
 
 /**
- * This class defines the bulk discount rule -> spending over the minimum amount
- * £, and getting a predefined % off.
+ * BulkDiscountRule class is the implementation class of PromotionRule.
+ * This class defines the bulk discount rule of spending over the minimum amount £ (minAmount),
+ * and getting a predefined % (discount) off.
  * 
  * @author manfred
  *

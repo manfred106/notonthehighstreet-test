@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.notonthehighstreet.CheckoutExtendedTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-01-14T16:22:42" hostname="MANKEL-PC" time="0.046">
+<testsuite name="com.notonthehighstreet.CheckoutExtendedTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-01-14T22:19:18" hostname="MANKEL-PC" time="0.043">
   <properties/>
-  <testcase name="test1()" classname="com.notonthehighstreet.CheckoutExtendedTest" time="0.042"/>
+  <testcase name="test1()" classname="com.notonthehighstreet.CheckoutExtendedTest" time="0.04"/>
   <testcase name="test2()" classname="com.notonthehighstreet.CheckoutExtendedTest" time="0.001"/>
   <testcase name="test3()" classname="com.notonthehighstreet.CheckoutExtendedTest" time="0.001"/>
-  <testcase name="test4()" classname="com.notonthehighstreet.CheckoutExtendedTest" time="0.001"/>
+  <testcase name="test4()" classname="com.notonthehighstreet.CheckoutExtendedTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Jan 14, 2021 4:22:42 PM com.notonthehighstreet.CheckoutExtendedTest test1
+  <system-err><![CDATA[Jan 14, 2021 10:19:18 PM com.notonthehighstreet.CheckoutExtendedTest test1
 INFO: Total price expected: £64.08
-Jan 14, 2021 4:22:42 PM com.notonthehighstreet.CheckoutExtendedTest test2
+Jan 14, 2021 10:19:18 PM com.notonthehighstreet.CheckoutExtendedTest test2
 INFO: Total price expected: £88.88
-Jan 14, 2021 4:22:42 PM com.notonthehighstreet.CheckoutExtendedTest test3
+Jan 14, 2021 10:19:18 PM com.notonthehighstreet.CheckoutExtendedTest test3
 INFO: Total price expected: £5.40
-Jan 14, 2021 4:22:42 PM com.notonthehighstreet.CheckoutExtendedTest test4
+Jan 14, 2021 10:19:18 PM com.notonthehighstreet.CheckoutExtendedTest test4
 INFO: Total price expected: £12.60
 ]]></system-err>
 </testsuite>

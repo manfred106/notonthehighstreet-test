@@ -4,6 +4,16 @@ import java.math.BigDecimal;
 
 import com.notonthehighstreet.product.Product;
 
+
+/**
+ * CheckoutItem class holds a single item that scanned to the CheckoutBasket.
+ * 
+ * Product is the actual item that put in the basket. InterimPrice is for calculation purpose, it logs
+ * the unit price after applying promotion rules on unit.
+ * 
+ * @author manfred
+ *
+ */
 public class CheckoutItem {
 
 	

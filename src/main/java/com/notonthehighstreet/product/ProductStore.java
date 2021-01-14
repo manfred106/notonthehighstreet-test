@@ -4,8 +4,10 @@ import java.math.BigDecimal;
 import java.util.*;
 
 /**
- * ProductStore is a singleton class that stores all available product in the
- * site.
+ * <code>ProductStore</code> is a singleton class. 
+ * 
+ * As this test does not have a database embedded, all products are stored in this store instance.
+ * This class should be replaced by a DAO class if database is available.
  * 
  * @author manfred
  *
@@ -14,8 +16,10 @@ public class ProductStore {
 
 	private static ProductStore instance;
 
+	// Lookup table for looking up product by its product code.
 	private Map<String, Product> productMap = new HashMap<>();
 
+	
 	/**
 	 * Get the instance of ProductStore.
 	 * 

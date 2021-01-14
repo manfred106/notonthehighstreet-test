@@ -3,7 +3,7 @@ package com.notonthehighstreet;
 import java.math.BigDecimal;
 
 /**
- * Helper class to handle common operations in the shopping example
+ * Helper class to handle common operations in the shopping example.
  * 
  * @author manfred
  *

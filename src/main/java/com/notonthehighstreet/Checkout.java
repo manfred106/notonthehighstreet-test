@@ -10,7 +10,8 @@ import com.notonthehighstreet.promotion.PromotionRule;
 
 /**
  * Checkout process. 
- * The constructor requires to input all promotion rules that apply to the checkout process.
+ * The constructor requires to input all promotion rules that will apply to the checkout process.
+ * Calling getTotalPrice() triggers the checkout process.
  * 
  * @author manfred
  *
@@ -53,9 +54,20 @@ public class Checkout {
 	
 	
 	/**
+	 * Get the original total price of all basket items.
+	 * 
+	 * @return the original total price.
+	 */
+	public BigDecimal getOriginalPrice()
+	{
+		return ShoppingHelper.roundPrice(basket.getOriginalPrice());
+	}
+	
+	
+	/**
 	 * Get the total price after applying all discounts.
 	 * 
-	 * @return
+	 * @return the total price after applying all discounts.
 	 */
 	public BigDecimal getTotalPrice()
 	{
@@ -92,8 +104,9 @@ public class Checkout {
 	
 	/**
 	 * Get the total price in double type.
+	 * This method simply calls getTotalPrice(), convert its returned data type from BigDecimal to Double.
 	 * 
-	 * @return
+	 * @return the total price in double type.
 	 */
 	public Double total()
 	{

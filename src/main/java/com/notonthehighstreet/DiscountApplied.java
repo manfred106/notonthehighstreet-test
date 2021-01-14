@@ -5,13 +5,13 @@ import java.math.BigDecimal;
 import com.notonthehighstreet.promotion.PromotionRule;
 
 /**
- * DiscountApplied stores the entry of applying PromotionRule to the
- * CheckoutBasket.
+ * DiscountApplied stores the entry of applying PromotionRule to the CheckoutBasket.
  * 
  * There are 3 information stored in this class:
  * 
- * - Price before applying the promotion - Price after applying the promotion -
- * The promotion rule applied
+ * - Price before applying the promotion 
+ * - Price after applying the promotion
+ * - The promotion rule applied
  * 
  * @author manfred
  *

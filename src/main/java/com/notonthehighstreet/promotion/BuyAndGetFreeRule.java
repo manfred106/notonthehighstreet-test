@@ -1,13 +1,15 @@
 package com.notonthehighstreet.promotion;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import com.notonthehighstreet.CheckoutBasket;
 import com.notonthehighstreet.CheckoutItem;
 
 
 /**
- * BuyAndGetFreeRule class models the promotion rule of buy x get y free on the same product.
+ * BuyAndGetFreeRule class is the implementation class of PromotionRule.
+ * It models the promotion rule of buy x get y free on the same product.
  * 
  * @author manfred
  *
@@ -70,15 +72,17 @@ public class BuyAndGetFreeRule extends AbstractPromotionRule {
 			BigDecimal discountAmount = BigDecimal.ZERO;
 			int freeCount = 0;
 			
-			for (CheckoutItem item : basket.getItemList()) {
+			// Iterate each item in the basket
+			List<CheckoutItem> itemList = basket.getItemList();
+			for (CheckoutItem item : itemList) {
 				
-				// Calculate the total price before promotion
+				// Sum up the item price before promotion
 				beforePrice = beforePrice.add(item.getInterimPrice());
 
 				// This one is the promotional product of this rule
 				if (productCode.equalsIgnoreCase(item.getProduct().getCode())) {
 
-					// Free item
+					// Free item, set the item interim to zero to indicate it is free.
 					if (freeCount > 0) {
 						freeCount--;
 						discountAmount.subtract(item.getInterimPrice());
@@ -89,7 +93,7 @@ public class BuyAndGetFreeRule extends AbstractPromotionRule {
 					else {
 						itemCount++;
 
-						// Match the minimum count, award free item(s).s
+						// Match the minimum count, award free item(s).
 						if (itemCount == numX) {
 							itemCount = 0;
 							freeCount += numY;

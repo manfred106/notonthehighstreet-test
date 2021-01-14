@@ -7,6 +7,13 @@ import com.notonthehighstreet.CheckoutBasket;
 import com.notonthehighstreet.CheckoutItem;
 
 
+/**
+ * BuyAndGetFreeRule class is the implementation class of PromotionRule.
+ * It models the promotion rule of buy (minimumUnits) or more items then the unit price drops to (reducedPrice).
+ * 
+ * @author manfred
+ *
+ */
 public class UnitPriceReductionRule extends AbstractPromotionRule {
 
 	private String productCode;
@@ -16,6 +23,7 @@ public class UnitPriceReductionRule extends AbstractPromotionRule {
 	private BigDecimal reducedPrice;
 
 	public UnitPriceReductionRule() {
+		// This rule should be run before the bulk discount rule, thus has a small order number
 		setExecutionOrder(10);
 	}
 
@@ -63,7 +71,8 @@ public class UnitPriceReductionRule extends AbstractPromotionRule {
 			
 			affectedItemList = new ArrayList<>();
 			
-			for (CheckoutItem item : basket.getItemList()) {
+			List<CheckoutItem> itemList = basket.getItemList();
+			for (CheckoutItem item : itemList) {
 				
 				beforePrice = beforePrice.add(item.getInterimPrice());
 				
@@ -82,8 +91,13 @@ public class UnitPriceReductionRule extends AbstractPromotionRule {
 			for (CheckoutItem item : affectedItemList)
 			{
 				BigDecimal priceDiff = item.getInterimPrice().subtract(reducedPrice);
-				item.setInterimPrice(reducedPrice);
-				afterPrice = afterPrice.subtract(priceDiff);
+				
+				// Make sure the price will not be higher than the original price after reduction.
+				if (priceDiff.compareTo(BigDecimal.ZERO) > 0)
+				{
+					item.setInterimPrice(reducedPrice);
+					afterPrice = afterPrice.subtract(priceDiff);
+				}
 			}
 			
 			basket.addDiscountApplied(this, beforePrice, afterPrice);

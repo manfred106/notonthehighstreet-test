@@ -2,3 +2,7 @@ com/notonthehighstreet/CheckoutStandardTest.java
  com.notonthehighstreet.CheckoutStandardTest
 com/notonthehighstreet/CheckoutExtendedTest.java
  com.notonthehighstreet.CheckoutExtendedTest
+com/notonthehighstreet/promotion/UnitPriceReductionRuleTest.java
+ com.notonthehighstreet.promotion.UnitPriceReductionRuleTest
+com/notonthehighstreet/promotion/BulkDiscountRuleTest.java
+ com.notonthehighstreet.promotion.BulkDiscountRuleTest

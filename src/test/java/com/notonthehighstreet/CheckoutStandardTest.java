@@ -14,6 +14,14 @@ import com.notonthehighstreet.promotion.PromotionRule;
 import com.notonthehighstreet.promotion.UnitPriceReductionRule;
 
 
+/**
+ * <code>CheckoutStandardTest</code> is a JUnit test case class.
+ * 
+ * It has 3 standard test cases covering all test data documented in the test. 
+ * 
+ * @author manfred
+ *
+ */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class CheckoutStandardTest {
 

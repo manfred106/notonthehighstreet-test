@@ -4,7 +4,8 @@ import com.notonthehighstreet.CheckoutBasket;
 
 
 /**
- * Interface of promotion rule.
+ * <code>PromotionRule</code> is an interface that all promotion rules should implement it.
+ * 
  * 
  * @author manfred
  *
@@ -23,7 +24,7 @@ public interface PromotionRule
 	/**
 	 * Apply the promotion rule to the checkout basket
 	 * 
-	 * @param basket
+	 * @param basket <code>CheckoutBasket</code> instance.
 	 */
 	void apply(CheckoutBasket basket);
 	
