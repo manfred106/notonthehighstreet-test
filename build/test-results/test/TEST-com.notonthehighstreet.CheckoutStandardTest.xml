@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.notonthehighstreet.CheckoutStandardTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-14T22:19:18" hostname="MANKEL-PC" time="0.003">
+<testsuite name="com.notonthehighstreet.CheckoutStandardTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-14T22:28:31" hostname="MANKEL-PC" time="0.003">
   <properties/>
   <testcase name="test1()" classname="com.notonthehighstreet.CheckoutStandardTest" time="0.001"/>
   <testcase name="test2()" classname="com.notonthehighstreet.CheckoutStandardTest" time="0.001"/>
   <testcase name="test3()" classname="com.notonthehighstreet.CheckoutStandardTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Jan 14, 2021 10:19:18 PM com.notonthehighstreet.CheckoutStandardTest test1
+  <system-err><![CDATA[Jan 14, 2021 10:28:31 PM com.notonthehighstreet.CheckoutStandardTest test1
 INFO: Total price expected: £66.78
-Jan 14, 2021 10:19:18 PM com.notonthehighstreet.CheckoutStandardTest test2
+Jan 14, 2021 10:28:31 PM com.notonthehighstreet.CheckoutStandardTest test2
 INFO: Total price expected: £36.95
-Jan 14, 2021 10:19:18 PM com.notonthehighstreet.CheckoutStandardTest test3
+Jan 14, 2021 10:28:31 PM com.notonthehighstreet.CheckoutStandardTest test3
 INFO: Total price expected: £73.76
 ]]></system-err>
 </testsuite>

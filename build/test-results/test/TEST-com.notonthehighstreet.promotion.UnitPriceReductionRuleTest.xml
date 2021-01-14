@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.notonthehighstreet.promotion.UnitPriceReductionRuleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-01-14T22:28:31" hostname="MANKEL-PC" time="0.002">
+  <properties/>
+  <testcase name="testCase1()" classname="com.notonthehighstreet.promotion.UnitPriceReductionRuleTest" time="0.0"/>
+  <testcase name="testCase2()" classname="com.notonthehighstreet.promotion.UnitPriceReductionRuleTest" time="0.001"/>
+  <testcase name="testCase3()" classname="com.notonthehighstreet.promotion.UnitPriceReductionRuleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jan 14, 2021 10:28:31 PM com.notonthehighstreet.promotion.UnitPriceReductionRuleTest testCase1
+INFO: Total price expected: £73.95
+Jan 14, 2021 10:28:31 PM com.notonthehighstreet.promotion.UnitPriceReductionRuleTest testCase2
+INFO: Total price expected: £32.00
+Jan 14, 2021 10:28:31 PM com.notonthehighstreet.promotion.UnitPriceReductionRuleTest testCase3
+INFO: Total price expected: £74.20
+]]></system-err>
+</testsuite>
