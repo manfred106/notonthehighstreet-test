@@ -1,0 +1,26 @@
+com/notonthehighstreet/CheckoutItem.java
+ com.notonthehighstreet.CheckoutItem
+com/notonthehighstreet/product/Product.java
+ com.notonthehighstreet.product.Product
+com/notonthehighstreet/ShoppingHelper.java
+ com.notonthehighstreet.ShoppingHelper
+com/notonthehighstreet/DiscountApplied.java
+ com.notonthehighstreet.DiscountApplied
+com/notonthehighstreet/promotion/UnitPriceReductionRule.java
+ com.notonthehighstreet.promotion.UnitPriceReductionRule
+com/notonthehighstreet/product/ProductStore.java
+ com.notonthehighstreet.product.ProductStore
+com/notonthehighstreet/promotion/AbstractPromotionRule.java
+ com.notonthehighstreet.promotion.AbstractPromotionRule
+com/notonthehighstreet/Checkout.java
+ com.notonthehighstreet.Checkout
+com/notonthehighstreet/CheckoutBasket.java
+ com.notonthehighstreet.CheckoutBasket
+com/notonthehighstreet/promotion/PromotionRule.java
+ com.notonthehighstreet.promotion.PromotionRule
+com/notonthehighstreet/promotion/BuyAndGetFreeRule.java
+ com.notonthehighstreet.promotion.BuyAndGetFreeRule
+com/notonthehighstreet/promotion/BulkDiscountRule.java
+ com.notonthehighstreet.promotion.BulkDiscountRule
+com/notonthehighstreet/ShoppingApplication.java
+ com.notonthehighstreet.ShoppingApplication

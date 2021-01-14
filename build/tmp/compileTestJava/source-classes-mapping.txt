@@ -1,0 +1,4 @@
+com/notonthehighstreet/CheckoutStandardTest.java
+ com.notonthehighstreet.CheckoutStandardTest
+com/notonthehighstreet/CheckoutExtendedTest.java
+ com.notonthehighstreet.CheckoutExtendedTest
