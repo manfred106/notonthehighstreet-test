@@ -5,7 +5,7 @@ plugins {
 
 group = 'com.notonthehighstreet'
 version = '0.1'
-sourceCompatibility = '11'
+sourceCompatibility = '1.8'
 
 apply plugin : "java" 
 ext {

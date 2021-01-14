@@ -7,6 +7,12 @@ import com.notonthehighstreet.product.Product;
 import com.notonthehighstreet.product.ProductStore;
 import com.notonthehighstreet.promotion.PromotionRule;
 
+/**
+ *  Checkout basket stores all the scanned items during the checkout process.
+ *  
+ * @author manfred
+ *
+ */
 public class CheckoutBasket {
 
 	private ProductStore store = ProductStore.getInstance();
