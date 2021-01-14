@@ -1,0 +1,76 @@
+plugins {
+    id 'java-library'
+    id 'application'
+}
+
+group = 'com.notonthehighstreet'
+version = '0.1'
+sourceCompatibility = '1.8'
+
+apply plugin : "java" 
+ext {
+   javaMainClass = "com.notonthehighstreet.ShoppingApplication"
+}
+
+application {
+    mainClassName = javaMainClass
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+task runFinalJar(type: JavaExec) {
+   classpath = files('build/libs/com.notonthehighstreet-0.1.jar')
+   classpath += sourceSets.main.runtimeClasspath
+   main = javaMainClass
+   standardInput = System.in
+}
+
+run{
+    standardInput = System.in
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': javaMainClass
+    }
+}
+
+
+repositories {
+	mavenCentral()
+}
+
+
+test {
+	useJUnitPlatform()
+    dependsOn 'cleanTest'
+}
+
+sourceSets {
+
+    main {
+      java {
+        srcDirs = ['src/main/java']
+      }
+      resources {
+        srcDirs = ['src/main/resources']
+      }
+    }
+
+    test {
+      java {
+        srcDirs = ['src/test/java']
+      }
+      resources {
+        srcDirs = ['src/test/resources']
+      }
+    }
+}
+
+dependencies {
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+	testImplementation  'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
