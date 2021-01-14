@@ -26,6 +26,7 @@ gradlew run
 
 
 ### How to run test cases?
+***
 There are 3 standard test cases defined in [`com.notonthehighstreet.CheckoutStandardTest`] covering the examples in the test sheet. To run them, execute
 ```bash
 gradlew test --tests com.notonthehighstreet.CheckoutStandardTest --info

@@ -9,7 +9,8 @@ import com.notonthehighstreet.promotion.PromotionRule;
 
 
 /**
- * Checkout process
+ * Checkout process. 
+ * The constructor requires to input all promotion rules that apply to the checkout process.
  * 
  * @author manfred
  *
@@ -62,8 +63,8 @@ public class Checkout {
 		
 		if (!completed)
 		{
-			// Apply the discount of each promotional rule
-			// Calculate the reduction of each rule after apply to the shopping cart.
+			// Apply each promotional rule to the basket.
+			// Calculate the discount amount of each rule after applying to the basket.
 			if (ruleList != null)
 			{
 				ruleList.stream().forEach(r -> r.apply(basket));
@@ -78,10 +79,16 @@ public class Checkout {
 	}
 	
 	
+	/**
+	 * Get the list of discount applied.
+	 * 
+	 * @return the list of discount applied.
+	 */
 	public List<DiscountApplied> getDiscountList()
 	{
 		return basket.getDiscountList();
 	}
+	
 	
 	/**
 	 * Get the total price in double type.
