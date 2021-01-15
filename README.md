@@ -22,7 +22,7 @@ The skeleton class diagram is shown as below:
 
 ### How to run the application?
 ***
-Download the source code as a zip file and unzip it to a project folder. In the project folder, execute the following command:
+Download the source code as a zip file and unzip it to a project folder. In the project folder, execute the following command. The application will ask for the input of basket items when it starts. Simply input a sequence of product codes in comma deimited form (e.g. 001,002,003).
 ```bash
 java -jar build/libs/notonthehighstreet-test-0.1.jar
 ```
