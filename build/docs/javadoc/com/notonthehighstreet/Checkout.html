@@ -27,7 +27,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":10,"i1":10,"i2":10,"i3":10};
+var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -186,19 +186,26 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.math.BigDecimal</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getOriginalPrice()">getOriginalPrice</a></span>()</code></th>
+<td class="colLast">
+<div class="block">Get the original total price of all basket items.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.math.BigDecimal</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTotalPrice()">getTotalPrice</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Get the total price after applying all discounts.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#scan(java.lang.String)">scan</a></span>&#8203;(java.lang.String&nbsp;productCode)</code></th>
 <td class="colLast">
 <div class="block">Scan the product by the product code, put it into the checkout basket.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Double</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#total()">total</a></span>()</code></th>
 <td class="colLast">
@@ -259,6 +266,20 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>productCode</code> - Product code of the product.</dd>
+</dl>
+</li>
+</ul>
+<a id="getOriginalPrice()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOriginalPrice</h4>
+<pre class="methodSignature">public&nbsp;java.math.BigDecimal&nbsp;getOriginalPrice()</pre>
+<div class="block">Get the original total price of all basket items.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the original total price.</dd>
 </dl>
 </li>
 </ul>

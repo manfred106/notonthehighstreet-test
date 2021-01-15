@@ -143,8 +143,14 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <pre>public class <span class="typeNameLabel">BulkDiscountRule</span>
 extends <a href="AbstractPromotionRule.html" title="class in com.notonthehighstreet.promotion">AbstractPromotionRule</a></pre>
 <div class="block">BulkDiscountRule class is the implementation class of PromotionRule.
+ 
  This class defines the bulk discount rule of spending over the minimum amount Â£ (minAmount),
- and getting a predefined % (discount) off.</div>
+ and getting a predefined % (discount) off. By providing different parameters to the constructor,
+ it can handling different kind of bulk discounts.
+ 
+  e.g. 
+  1) new BulkDiscountRule(0, 10) means "10% off for all items"
+  2) new BulkDiscountRule(100, 20) means "20% off when purchase over Â£100"</div>
 </li>
 </ul>
 </div>

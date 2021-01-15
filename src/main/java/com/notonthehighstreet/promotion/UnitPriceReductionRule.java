@@ -8,9 +8,16 @@ import com.notonthehighstreet.CheckoutItem;
 
 
 /**
- * BuyAndGetFreeRule class is the implementation class of PromotionRule.
- * It models the promotion rule of buy (minimumUnits) or more items then the unit price drops to (reducedPrice).
+ * UnitPriceReductionRule class is the implementation class of PromotionRule.
  * 
+ * It models the promotion rule of buy (minimumUnits) or more items, then the unit price drops to (reducedPrice).
+ * By providing different parameters to the constructor, it can handling different kind of unit price
+ * reduction discounts.
+ * 
+ *  e.g. 
+ *  1) new UnitPriceReductionRule("001", 0, 10) means "The product (product code=001) price reduces to £10".
+ *  2) new UnitPriceReductionRule("001", 2, 8) means "Buy 2 or more product (product code=001), the price reduces to £8".
+ *  
  * @author manfred
  *
  */

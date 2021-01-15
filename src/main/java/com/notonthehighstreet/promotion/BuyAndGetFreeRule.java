@@ -9,7 +9,14 @@ import com.notonthehighstreet.CheckoutItem;
 
 /**
  * BuyAndGetFreeRule class is the implementation class of PromotionRule.
- * It models the promotion rule of buy x get y free on the same product.
+ * 
+ * It models the promotion rule of buy x get y free on the same product. 
+ * By providing different parameters to the constructor,
+ * it can handling different kind of buy x and get y free discounts.
+ * 
+ *  e.g. 
+ *  1) new BuyAndGetFreeRule("001", 3, 1) means "For product 001, buy 3 get 1 free".
+ *  2) new BuyAndGetFreeRule("002", 2, 1) means "For product 002, buy 2 get 1 free".
  * 
  * @author manfred
  *

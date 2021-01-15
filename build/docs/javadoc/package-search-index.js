@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.notonthehighstreet"},{"l":"com.notonthehighstreet.product"},{"l":"com.notonthehighstreet.promotion"}]

@@ -142,8 +142,15 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <hr>
 <pre>public class <span class="typeNameLabel">UnitPriceReductionRule</span>
 extends <a href="AbstractPromotionRule.html" title="class in com.notonthehighstreet.promotion">AbstractPromotionRule</a></pre>
-<div class="block">BuyAndGetFreeRule class is the implementation class of PromotionRule.
- It models the promotion rule of buy (minimumUnits) or more items then the unit price drops to (reducedPrice).</div>
+<div class="block">UnitPriceReductionRule class is the implementation class of PromotionRule.
+ 
+ It models the promotion rule of buy (minimumUnits) or more items, then the unit price drops to (reducedPrice).
+ By providing different parameters to the constructor, it can handling different kind of unit price
+ reduction discounts.
+ 
+  e.g. 
+  1) new UnitPriceReductionRule("001", 0, 10) means "The product (product code=001) price reduces to Â£10".
+  2) new UnitPriceReductionRule("001", 2, 8) means "Buy 2 or more product (product code=001), the price reduces to Â£8".</div>
 </li>
 </ul>
 </div>
