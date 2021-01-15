@@ -2,8 +2,13 @@
 
 ### Overview
 ***
-This is a repository to storing the solution code of implementing a checkout system 
-that involves the inclusion of different promotions.
+This is a repository for storing the test solution code of implementing a checkout system 
+that involves the inclusion of different promotions. 
+
+The core PromotionRule is implemented as an abstraction. All promotion rules must implement this interface and provide the implementation in its own concrete class.
+The skeleton class diagram is shown as below:
+
+[![Class Diagram](https://github.com/manfred106/notonthehighstreet-test/blob/main/class%20diagram.png?raw=true)
 
 
 ### Prerequisite
