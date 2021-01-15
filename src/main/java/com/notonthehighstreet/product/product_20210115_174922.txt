@@ -1,5 +1,0 @@
-WARNING - 17:49:22: First conversion pass
-ERROR - 17:49:22: java.net.MalformedURLException: unknown protocol: pathmap
-WARNING - 17:49:27: Convert com.notonthehighstreet.product
-WARNING - 17:49:27: First conversion pass
-ERROR - 17:49:27: java.net.MalformedURLException: unknown protocol: pathmap
